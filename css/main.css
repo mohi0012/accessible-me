@@ -81,6 +81,6 @@ a:focus{
   background-color:#9f5e38;
 }
 
-.current a {
+.current a:link{
   background: white;
 }
