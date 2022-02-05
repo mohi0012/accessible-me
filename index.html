@@ -22,7 +22,7 @@
 
   <div class="container" id="top">
     <header class="site-header">
-      <h1>Jam Box Studios</h1>
+      <h1 role="heading">Jam Box Studios</h1>
       <nav class="main-nav" id="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
@@ -30,29 +30,38 @@
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
+    
       </nav>
-      <img src="https://placekitten.com/1200/900" class="banner">
+      <header role="banner">
+            <img src="https://placekitten.com/1200/900" class="banner">
     </header>
-    <main class="main-content" id="main-content">
+  </header>
+    <div class="main-content" id="main-content">
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h3>Meet the owner</h3>
+      
+      <div itemscope itemtype="https://schema.org/Person" class="owner">
+        <h3 role="heading">Meet the owner</h3>
         <ul>
-          <li>Name: John Doe</li>
+          <li>Name: <span itemprop="name">John Doe</span></li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+          <li>Phone: <span itemprop="telephone">613-000-0000</span></li>
         </ul>
-        <h3>Address</h3>
+      </div>
+      <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"></div>
+        <h3 role="heading">Address</h3>
         <p>
           Jambox Studios
           123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+          <span itemprop="addressLocality">Musicville</span>,
+          <span itemprop="addressRegion">Danceistan</span>
+          <span itemprop="postalcode">B3T 0L0</span>
         </p>
-      </div>
+    
+    </div>
+
       <section class="contact-section">
         <h2>Contact Us</h2>
         <form action="thanks.html">
