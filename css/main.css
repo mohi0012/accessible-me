@@ -14,6 +14,10 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+header{
+  text-align: center;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -35,6 +39,7 @@ img {
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  background-color:aliceblue;
 }
 
 .main-nav ul li a {
@@ -42,6 +47,7 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+  line-height:3;
 }
 
 form input,
@@ -70,8 +76,6 @@ form button {
   padding: 2rem 0;
 }
 
-/* my css */
-
-.current a:link {
-  background-color: white !important;
+a:focus{
+  outline: 2px solid black;
 }
